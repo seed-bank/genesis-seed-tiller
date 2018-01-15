@@ -1,0 +1,39 @@
+{
+  "name": "genesis-seed",
+  "version": "0.0.1",
+  "description": "This is kernal code for the seed-bank project. It will be used by all generated generators as well as the generator-genesis-seed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seed-bank/genesis-seed.git"
+  },
+  "keywords": [
+    "yeoman",
+    "generator",
+    "seed",
+    "seed-bank"
+  ],
+  "devDependencies": {
+    "eslint": "^4.1.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^20.0.0"
+  },
+  "dependencies": {
+    "casual": "^1.5.14",
+    "chalk": "^1.1.3",
+    "checksum": "^0.1.1",
+    "lodash": "^4.17.4",
+    "underscore.string": "^3.3.4",
+    "yosay": "^2.0.0"
+  },
+  "author": "reasonthearchitect",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seed-bank/genesis-seed/issues"
+  },
+  "homepage": "https://github.com/seed-bank/genesis-seed#readme"
+}
