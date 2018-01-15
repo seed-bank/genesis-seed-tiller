@@ -10,7 +10,6 @@ function template(that, templates) {
         var replacementKey = t["config-key"];
         t.files.forEach(function(f){
             var paths = getPaths(that, f, t, globals);
-            console.log("PATH:\n" + JSON.stringify(paths) + "\n");
             templateFile(that, paths);
         });
     });
@@ -64,8 +63,6 @@ function getToPath(that, f, t, globals) {
 function getFileName(f) {
     if (f.override) {
         return f.override;
-    } else if (f.name.indexOf("__") > -1){ 
-        return "." + f.name.substring(0, f.name.indexOf("__")) + f.name.substring(f.name.indexOf("__") + 2);
     } else if (f.name.indexOf("_") > -1){ 
         return f.name.substring(0, f.name.indexOf("_")) + f.name.substring(f.name.indexOf("_") + 1);
     }
