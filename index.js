@@ -22,7 +22,7 @@ function loadTemplates(yeoman) {
 exports.bang = function (yeoman, cb) {
 	sayHello(yeoman);
 	loadconfig(yeoman);
-	cb(yeoman.data);
+	cb(yeoman);
 	var templates = loadTemplates(yeoman);
 	wf.template(yeoman, templates);
 }
