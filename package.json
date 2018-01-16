@@ -1,5 +1,5 @@
 {
-  "name": "genesis-seed",
+  "name": "genesis-tiller",
   "version": "0.0.1",
   "description": "This is kernal code for the seed-bank project. It will be used by all generated generators as well as the generator-genesis-seed",
   "main": "index.js",

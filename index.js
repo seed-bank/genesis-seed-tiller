@@ -25,8 +25,9 @@ exports.bang = function (yeoman, cb) {
 	cb(yeoman.data);
 	var templates = loadTemplates(yeoman);
 	console.log("Data:\n" + JSON.stringify(yeoman.data));
-	/*
+	
 	wf.template(yeoman, templates);
+	/*
 	yeoman.log("\nData:\n" + JSON.stringify(yeoman.data));
 	console.log("where I am I? " + yeoman.sourceRoot());
 	*/
