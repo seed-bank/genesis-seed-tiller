@@ -22,7 +22,11 @@ function loadTemplates(yeoman) {
 exports.bang = function (yeoman, cb) {
 	sayHello(yeoman);
 	loadconfig(yeoman);
-	cb(yeoman);
-	var templates = loadTemplates(yeoman);
-	wf.template(yeoman, templates);
+	var promise = cb(yeoman);
+	promise.then(function() {
+		var templates = loadTemplates(yeoman);
+		wf.template(yeoman, templates);
+    }, function(err) {
+        console.log(err);
+    });
 }
