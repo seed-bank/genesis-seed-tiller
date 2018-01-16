@@ -62,11 +62,16 @@ function getToPath(that, f, t, globals) {
     }
     globals["config-keys"].forEach(function(g){
         var replacementKey = g["config-key"];
-        if (toPath.indexOf(replacementKey) > -1){
-            toPath = 
-        toPath.substring(0, toPath.indexOf(replacementKey)) +
-            that.data[replacementKey] +
-            toPath.substring(toPath.indexOf(replacementKey) + replacementKey.length);
+        var loop = true;
+        while(loop){
+            if (toPath.indexOf(replacementKey) > -1){
+                toPath = 
+                    toPath.substring(0, toPath.indexOf(replacementKey)) +
+                    that.data[replacementKey] +
+                    toPath.substring(toPath.indexOf(replacementKey) + replacementKey.length);
+            } else {
+                loop = false;
+            }
         }
     });
     return toPath;

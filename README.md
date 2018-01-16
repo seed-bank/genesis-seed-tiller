@@ -6,7 +6,7 @@ This project is the core behaviour for [seed-bank](https://github.com/seed-bank)
 
 Note that this project uses a few conventions in order to operate. They are:
 
-1. genesis.config is required in the root folder of whereever the command line is envoked. However, no structure is required. In short, developers will write there own configuration for their generators.
+1.  is required in the root folder of whereever the command line is envoked. However, no structure is required. In short, developers will write there own configuration for their generators.
 2. genesis-templates.json is required in the directory OF THE GENERATOR CREATED. This means, when you create a generator, each module will have this file as well as all the files associated with it.
 3. Within genesis-templates.json files that are prefixed with the '_' are assumed to be templates. Note that this is not enforced but is just a convention I like. In this case, this lib will remove the '_' char so that, for example, '_README.md' becomes 'README.md'. Note that you can override this with the override command. For example, the following will retain the '_' char.
 
