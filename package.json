@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seed-bank/genesis-seed.git"
+    "url": "git+https://github.com/seed-bank/genesis-seed-tiller.git"
   },
   "keywords": [
     "yeoman",
@@ -33,7 +33,7 @@
   "author": "reasonthearchitect",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/seed-bank/genesis-seed/issues"
+    "url": "https://github.com/seed-bank/genesis-seed-tiller/issues"
   },
-  "homepage": "https://github.com/seed-bank/genesis-seed#readme"
+  "homepage": "https://github.com/seed-bank/genesis-seed-tiller#readme"
 }
