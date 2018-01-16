@@ -10,11 +10,21 @@ function template(that, templates) {
         var replacementKey = t["config-key"];
         t.files.forEach(function(f){
             var paths = getPaths(that, f, t, globals);
-            templateFile(that, paths);
+            if (paths.copy) {
+                copyFile(that, paths)
+            } else {
+                templateFile(that, paths);
+            }
         });
     });
 }
 
+function copyFile(that, paths) {
+    that.fs.copy(
+        that.templatePath(paths.fromPath),
+        that.destinationPath(paths.toPath)
+    );
+}
 function templateFile(that, paths) {
     that.fs.copyTpl(
         that.templatePath(paths.fromPath),
@@ -26,7 +36,8 @@ function templateFile(that, paths) {
 function getPaths(that, f, t, globals) {
     return {
         fromPath: getFromPath(f, t),
-        toPath: getToPath(that, f, t, globals)
+        toPath: getToPath(that, f, t, globals),
+        copy: f.copy
     };
 }
 function getFromPath(f, t) {
