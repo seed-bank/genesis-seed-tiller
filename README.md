@@ -2,7 +2,7 @@
 
 This project is the core behaviour for [seed-bank](https://github.com/seed-bank) projects.
 
-# Details
+## Details
 
 Note that this project uses a few conventions in order to operate. They are:
 
@@ -24,3 +24,7 @@ Note that in the above scenario, the '_README.md' file will be renamed to the 'R
 ```
 {"name": "_README.md", "override": "_README.md", "copy": true}
 ```
+
+## Finally
+
+The easiest way to use this lib is to simply install the [generator-genesis-seed](https://github.com/seed-bank/generator-genesis-seed) Yeoman generator. The generator-genesis-seed simplifies the effort of creating a Yeoman generator.
