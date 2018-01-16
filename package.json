@@ -1,6 +1,6 @@
 {
   "name": "genesis-seed-tiller",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "This is kernal code for the seed-bank project. It will be used by all generated generators as well as the generator-genesis-seed",
   "main": "index.js",
   "scripts": {

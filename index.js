@@ -11,7 +11,7 @@ function sayHello (yeoman) {
 }
 
 function loadconfig(yeoman) {
-	yeoman.data = yeoman.fs.readJSON('./genesis.config', 'utf8');
+	yeoman.data = yeoman.fs.readJSON('./genesis.json', 'utf8');
 }
 function loadTemplates(yeoman) {
 	var path = yeoman.sourceRoot().substring(0, yeoman.sourceRoot().indexOf('templates'));    
